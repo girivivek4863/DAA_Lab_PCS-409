@@ -1,4 +1,4 @@
-// Worst Case: O(√n) (jumps + linear scan)
+// Worst Case O(√n) (jumps + linear scan)
 
 #include <iostream>
 #include <cmath>
@@ -17,7 +17,7 @@ void jumpSearch(int arr[], int n, int key)
             return;
         }
     }
-    // Perform linear search in the identified block
+    
     while (prev < n && arr[prev] <= key)
     {
         comparisons++;

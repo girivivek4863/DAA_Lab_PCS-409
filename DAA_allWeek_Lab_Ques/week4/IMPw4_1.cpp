@@ -34,7 +34,7 @@ void merge(int arr[], int left, int mid, int right)
         else
         {
             arr[k++] = rightArr[j++];
-            inversions += (n1 - i); // Count inversions
+            inversions += (n1 - i); 
         }
     }
     while (i < n1)
@@ -42,7 +42,7 @@ void merge(int arr[], int left, int mid, int right)
     while (j < n2)
         arr[k++] = rightArr[j++];
 }
-// Merge Sort function
+
 void mergeSort(int arr[], int left, int right)
 {
     if (left < right)

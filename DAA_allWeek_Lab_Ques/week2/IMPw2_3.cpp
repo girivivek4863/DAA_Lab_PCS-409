@@ -11,10 +11,10 @@ using namespace std;
 
 int countPairsWithDiff(int arr[], int n, int K)
 {
-    sort(arr, arr + n); // Step 1: Sort the array (O(n log n))
+    sort(arr, arr + n); 
     int count = 0;
     int i = 0, j = 1;
-    // Step 2: Two-pointer technique
+    
     while (j < n)
     {
         int diff = arr[j] - arr[i];

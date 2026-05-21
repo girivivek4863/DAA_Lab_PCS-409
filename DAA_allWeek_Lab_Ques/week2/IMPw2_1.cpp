@@ -17,7 +17,7 @@ int firstOccurrence(int arr[], int n, int key)
         if (arr[mid] == key)
         {
             result = mid;
-            high = mid - 1; // Search in the left half
+            high = mid - 1; 
         }
         else if (arr[mid] < key)
         {
@@ -30,7 +30,7 @@ int firstOccurrence(int arr[], int n, int key)
     }
     return result;
 }
-// Function to find the last occurrence of the key
+
 int lastOccurrence(int arr[], int n, int key)
 {
     int low = 0, high = n - 1, result = -1;
@@ -40,7 +40,7 @@ int lastOccurrence(int arr[], int n, int key)
         if (arr[mid] == key)
         {
             result = mid;
-            low = mid + 1; // Search in the right half
+            low = mid + 1; 
         }
         else if (arr[mid] < key)
         {
@@ -56,7 +56,7 @@ int lastOccurrence(int arr[], int n, int key)
 int main()
 {
     int T;
-    cin >> T; // Number of test cases
+    cin >> T;
     while (T--)
     {
         int n, key;

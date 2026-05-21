@@ -15,7 +15,7 @@ int comparisons = 0, swaps = 0;
 int partition(int arr[], int low, int high)
 {
     int randomIdx = low + rand() % (high - low + 1);
-    swap(arr[randomIdx], arr[high]); // Swap random pivot with last element
+    swap(arr[randomIdx], arr[high]); 
     swaps++;
     int pivot = arr[high];
     int i = low - 1;
@@ -33,7 +33,7 @@ int partition(int arr[], int low, int high)
     swaps++;
     return i + 1;
 }
-// Quick Sort function
+
 void quickSort(int arr[], int low, int high)
 {
     if (low < high)
